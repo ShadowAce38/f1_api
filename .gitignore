@@ -1,12 +1,34 @@
-
-###> symfony/framework-bundle ###
+# Symfony / PHP
 /vendor/
 /var/
-/.env.local
-.env.*.local
-.env.test
-/public/bundles/
 /node_modules/
-/.pnp/
-/.pnp.js
-###< symfony/framework-bundle ###
+/public/bundles/
+/public/build/
+/public/hot
+
+# dotenv local overrides (contains sensitive info)
+/.env.local
+/.env.local.php
+/.env.test.local
+/.env.prod.local
+
+# Symfony secrets (private keys should NEVER be committed, especially for prod)
+/config/secrets/prod/*.private.php
+/config/secrets/dev/*.private.php
+
+# Docker files
+/docker/
+/docker-compose.override.yml
+
+# IDE / Editor files
+/.idea/
+/.vscode/
+/*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and cache
+/log/
+/tmp/
